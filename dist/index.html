@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script defer src="bundle.js"></script></head>
+<body>
+  <button id="discord-login">
+    <a href="https://discord.com/api/oauth2/authorize?client_id=999172936936210432&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpersonal&response_type=token&scope=identify">
+      디스코드로 시작하기
+    </a>
+  </button>
+
+  <div id="personal-page">
+    <h3 id="username"></h3>
+    <h4 id="userid"></h4>
+    <ul>
+      <ui id="avatar"></ui>
+      <ui id="discriminator"></ui>
+      <ui id="flags"></ui>
+    </ul>
+
+    <button id="github-login">
+      <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=f80dbb68c7a1e00f4f9d>">
+        깃헙 연동하기
+      </a>
+    </button>
+    <form>
+      <input type="url" name="blogURL" id="blog-url">
+      <input type="button" onclick="submitURL()" value="Submit">
+    </form>
+  </div>
+  <script>
+    const submitURL = () => {
+      const url = document.querySelector('#blog-url').value
+
+      // contruct rss_url
+      // naver - https://rss.(blog_url).xml
+      // tistory - https://(blog_url/rss
+    }
+  </script>
+</body>
+</html>

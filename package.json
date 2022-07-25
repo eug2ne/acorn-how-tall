@@ -1,0 +1,24 @@
+{
+  "name": "acorn_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase": "^9.9.0",
+    "webpack": "^5.73.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.19",
+    "rest-client": "^0.1.5",
+    "webpack-cli": "^4.10.0"
+  }
+}
